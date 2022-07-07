@@ -1,0 +1,50 @@
+.advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list {
+       display: flex;  
+    }
+
+    &__item {
+       display: inline-block;
+       margin-bottom: 30px;
+
+      &:nth-child(-n + 3) {
+            margin-right: 30px;
+        }
+    }
+
+    &__pictureBlock {
+        background-color: var(--background-our-team-color);
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 65.32px;
+        height: 70px;
+        fill: currentColor;
+    }
+
+    &__title {
+    color: var(--small-text-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: var(--main-text-color);
+        line-height: 1.71;
+    }
+
+}

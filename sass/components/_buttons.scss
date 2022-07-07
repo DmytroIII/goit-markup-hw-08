@@ -1,0 +1,85 @@
+
+.button-close {
+    display: flex;
+    margin-left: auto;
+
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    &__icon {
+    fill: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    }
+        &:hover &__icon {
+            fill: #2196F3;
+    }
+}
+
+.button {
+    font-family: Roboto, sans-serif;
+    background-color: var(--background-button-hover);
+    font-size: 16px;
+    line-height: 1.87;
+    font-weight: 700;
+    color: var(--button-and-h1-color);
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+    border-width: 0;
+}
+
+
+.menu .button.active {
+    background-color: var(--background-button-hover);
+    color: var(--button-and-h1-color);
+}
+
+.menu .button {
+    background-color: var(--background-our-team-color);
+    color: var(--small-text-color);
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    box-shadow: none;
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.menu .button:hover,
+.menu .button:active,
+.menu .button:focus {
+    background-color: var(--background-button-hover);
+    color: var(--button-and-h1-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+
+}
+
+.policy+.button {
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 55px;
+}
+
+
+.form-mailing-list button {
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding-left: 0px;
+}

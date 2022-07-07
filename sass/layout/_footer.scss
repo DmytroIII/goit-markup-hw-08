@@ -1,0 +1,15 @@
+
+.footer {
+    background-color: var(--background-header-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+    display: flex;
+    }
+
+    &__adress {
+    margin-right: 75px;
+    }
+}
+

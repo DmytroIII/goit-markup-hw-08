@@ -1,0 +1,28 @@
+.banner {
+    position: relative;
+    background-image: linear-gradient(to right, #2F303A66, #2F303A66), url("../images/banner_background.jpg");
+    background-color: var(--background-header-footer-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    max-width: 1600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title {
+    color: var(--button-and-h1-color);
+    text-transform: uppercase;
+    font-size: 44px;
+    line-height: 1.36;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+    margin: 0 auto 45px auto;
+}
+  
+}
