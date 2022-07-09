@@ -444,6 +444,8 @@
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   -webkit-transition: opacity, isibility, 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity, isibility, 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  padding: 50px 30px;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -1084,22 +1086,24 @@ p {
   margin: auto 50px auto 0;
   position: relative;
 }
-.navigation__mobile-button {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  border: 0;
-  background-color: transparent;
-}
 .navigation__icon-cross {
   display: none;
 }
 
-.navigation__mobile-button.is-open .navigation__icon-cross {
+.button-mobile {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+.button-mobile__icon-cross {
+  display: none;
+}
+.button-mobile.is-open .button-mobile__icon-cross {
   display: block;
 }
-
-.navigation__mobile-button.is-open .navigation__icon-menu {
+.button-mobile.is-open .button-mobile__icon-menu {
   display: none;
 }
 

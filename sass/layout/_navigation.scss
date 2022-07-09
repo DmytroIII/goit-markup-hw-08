@@ -38,26 +38,32 @@
         position: relative;
     }
 
-    &__mobile-button {
-        margin:0;
-        padding:0;
-        display:inline-block;
-        border:0;
-        background-color: transparent;
-    }
-
     &__icon-cross {
         display:none;
     }
 }
 
-.navigation__mobile-button.is-open .navigation__icon-cross {
-    display:block;
+
+.button-mobile {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+
+    &__icon-cross {
+    display: none;
+    }
+
+    &.is-open &__icon-cross {
+     display: block;
+    }
+    
+    &.is-open &__icon-menu {
+    display: none;
+    }
 }
 
-.navigation__mobile-button.is-open .navigation__icon-menu {
-    display: none;
-}
 
 .menu-container {
     display: none;
