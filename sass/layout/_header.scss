@@ -2,10 +2,11 @@
 
 .header {
     border-bottom: 1px solid #ECECEC;
-
     &__items {
         display: flex;
+        position: relative;
     }
+
 
 }
 
