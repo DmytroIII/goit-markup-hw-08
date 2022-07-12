@@ -5,10 +5,9 @@
     &__items {
         display: flex;
         position: relative;
+        justify-content: space-between;
     }
 }
-
-
 
 
 .current {

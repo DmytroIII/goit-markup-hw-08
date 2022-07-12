@@ -15,8 +15,9 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
-    @media screen and (min-width:1600px) {
+    @media screen and (min-width:1200px) {
     flex-wrap: nowrap;
     }
     }
@@ -24,11 +25,19 @@
 
     &__item {
     list-style-type: none;
-    width: 50%;
+    width: calc((100% - 2 * 15px)/2);
+
     
     @media screen and (min-width:768px){
-        width:33.3%
+    width: calc((100% - 4 * 15px)/3);
     }
+
+    @media screen and (min-width:1200px) {
+    width: calc((100% - 10 * 15px)/6);
+    }
+
+
+
 
     }   
 
