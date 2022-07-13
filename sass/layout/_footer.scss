@@ -7,17 +7,26 @@
     &__container {
       @media screen and (min-width:1200px){
         display: flex;
+        text-align: center;
+        justify-content: space-between;
       }
 
     }
 
     &__adress {
+
+    @media screen and (min-width:768px) {
+          display: flex;
+          justify-content: space-between;
+          margin-left: 76px;
+          margin-right: 89px;
+    }
+
     @media screen and (min-width:1200px) {
         display: flex;
+        margin-left: 0px;
     }
-    @media screen and (min-width:768px) {
-    display: flex;
-    }
+
 
 
     }

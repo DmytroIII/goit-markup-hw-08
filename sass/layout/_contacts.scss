@@ -72,14 +72,19 @@
 
 .contacts-footer {
     display: block;
-    margin-top: 20px;
 
     &__list {
     list-style: none;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+    text-align:start;
+    }
+
     }
    
     &__item:not(:first-child) {
-    margin-top: 9px;
+    margin-top: 8px;
     }
 
     &__link {
