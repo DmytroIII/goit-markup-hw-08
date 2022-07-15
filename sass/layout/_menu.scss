@@ -1,7 +1,12 @@
 
 .menu {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 
     &__list {
         display: flex;
@@ -14,8 +19,16 @@
         }
       
     }
+
+    &__item {
+        @media screen and (max-width:767px) {
+                margin-bottom: 15px;
+            }
+    }
+
     &__item:not(last-child) {
         margin-right: 8px;
     }
+      
 
 }

@@ -15,20 +15,21 @@
     text-transform: none;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+    }   
+
     }
     
     &__list {
     background-color: var(--background-our-team-color);
     list-style: none;
-
-
-    @media screen and (min-width:768px){
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    }
+    gap:30px;
 
     }
 

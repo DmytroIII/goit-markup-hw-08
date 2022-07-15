@@ -1,6 +1,12 @@
 .regular-customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
 
     &__title {
         font-size: 36px;
@@ -9,13 +15,20 @@
         text-transform: none;
         font-weight: 700;
         margin-top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+    
+  @media screen and (min-width:1200px) {
+      margin-bottom: 50px;
+  }
+
     }
+
     &__list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 
     @media screen and (min-width:1200px) {
     flex-wrap: nowrap;
@@ -37,14 +50,13 @@
     }
 
 
-
-
     }   
 
     &__link {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 92px;
         border: 1px solid var(--background-svg-color);
         border-radius: 4px;
         color: var(--background-svg-color);
