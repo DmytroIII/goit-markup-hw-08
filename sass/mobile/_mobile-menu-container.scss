@@ -30,14 +30,14 @@
 
 .mobile-navigation-top {
     @media screen and (min-width:768px) {
-            display: none;
-        }
+        display: none;
+    }
 }
 
 .mobile-navigation-bottom {
     @media screen and (min-width:768px) {
-            display: none;
-        }
+        display: none;
+    }
 
 
 }
@@ -47,20 +47,20 @@
 
 
     &__link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17px;
-    color: #212121;
-    
-    &:hover,
-    &:active {
-    color: #2196F3;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17px;
+        color: #212121;
 
-    }
+        &:hover,
+        &:active {
+            color: #2196F3;
+
+        }
     }
 
-    &__item:not(:last-child){
+    &__item:not(:last-child) {
         margin-bottom: 32px;
     }
 
@@ -68,15 +68,15 @@
 
 .mobile-contacts {
     list-style: none;
-        
+
     &__phone {
         font-weight: 500;
         font-size: 34px;
         line-height: 40px;
         color: #2196F3;
         text-decoration: none;
-     }
-        
+    }
+
     &__mail {
         font-weight: 500;
         font-size: 24px;
@@ -88,6 +88,7 @@
     &__item:first-child {
         margin-bottom: 32px;
     }
+
     &__item:last-child {
         margin-bottom: 64px;
     }
@@ -103,8 +104,8 @@
 
     &:hover,
     :active {
-       fill:#2196F3;
-      }
+        fill: #2196F3;
+    }
 
 
     &.is-open &__icon-cross {
@@ -152,11 +153,7 @@
 }
 
 
-.button-open {
-
-}
+.button-open {}
 
 
-.button-close {
-
-}
+.button-close {}
