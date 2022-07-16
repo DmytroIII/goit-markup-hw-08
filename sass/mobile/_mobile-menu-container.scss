@@ -1,12 +1,13 @@
 .mobile-menu-container {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     background-color: #FFFFFF;
     padding: 20px;
     font-size: 20px;
+    height: 100vh;
     z-index: 1;
 
     &.is-open {
@@ -23,6 +24,8 @@
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
+    overflow: auto;
+    padding: 48px 21px 48px 40px;
 }
 
 .mobile-navigation-top {
@@ -103,9 +106,6 @@
        fill:#2196F3;
       }
 
-    &__icon-cross {
-        display: none;
-    }
 
     &.is-open &__icon-cross {
         display: block;
@@ -152,3 +152,11 @@
 }
 
 
+.button-open {
+
+}
+
+
+.button-close {
+
+}

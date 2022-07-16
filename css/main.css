@@ -653,6 +653,10 @@ img {
   height: auto;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -1372,12 +1376,13 @@ p {
 .mobile-menu-container {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: #FFFFFF;
   padding: 20px;
   font-size: 20px;
+  height: 100vh;
   z-index: 1;
 }
 .mobile-menu-container.is-open {
@@ -1401,6 +1406,8 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  overflow: auto;
+  padding: 48px 21px 48px 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1466,9 +1473,6 @@ p {
 .button-mobile:hover,
 .button-mobile :active {
   fill: #2196F3;
-}
-.button-mobile__icon-cross {
-  display: none;
 }
 .button-mobile.is-open .button-mobile__icon-cross {
   display: block;
