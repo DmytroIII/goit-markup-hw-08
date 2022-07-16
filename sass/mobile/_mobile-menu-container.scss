@@ -3,11 +3,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     background-color: #FFFFFF;
     padding: 20px;
     font-size: 20px;
-    height: 100vh;
     z-index: 1;
 
     &.is-open {
@@ -23,9 +22,10 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 100%;
     overflow: auto;
     padding: 48px 21px 48px 40px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .mobile-navigation-top {

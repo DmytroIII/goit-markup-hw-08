@@ -1382,7 +1382,6 @@ p {
   background-color: #FFFFFF;
   padding: 20px;
   font-size: 20px;
-  height: 100vh;
   z-index: 1;
 }
 .mobile-menu-container.is-open {
@@ -1405,9 +1404,10 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
   overflow: auto;
   padding: 48px 21px 48px 40px;
+  width: 100vw;
+  height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
