@@ -21,8 +21,8 @@
             </a>
 
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="./index.html" class="navigation__link">Студия</a></li>
-                <li class="navigation__item"><a href="./portfolio.html" class="navigation__link current">Портфолио</a></li>
+                <li class="navigation__item"><a href="./index.html" class="navigation__link current">Студия</a></li>
+                <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
             </ul>
         </nav>
@@ -41,17 +41,25 @@
                     +38 096 111 11 11</a></li>
         </ul>
 
-        <button type="button" class="button-mobile" data-menu-button>
+        <button type="button" class="button-mobile button-open" data-menu-open>
             <svg width="24" height="16" aria-controls="mobile-menu-container"
                 aria-label="Переключатель мобильного меню">
-                <use class="button-mobile__icon-cross" href="./images/icon-navigation.svg#icon-icon-navigation-close">
+                <use class="button-mobile__icon-menu" href="./images/icon-navigation.svg#icon-icon-navigation">
                 </use>
-                <use class="button-mobile__icon-menu" href="./images/icon-navigation.svg#icon-icon-navigation"></use>
             </svg>
         </button>
 
-        <div class="mobile-menu-container" id="mobile-menu-container" data-menu>
+        <div class="mobile-menu-container is-hidden" id="mobile-menu-container" data-menu>
             <div class="container mobile-menu-box">
+
+                <button type="button" class="button-mobile button-close" data-menu-close>
+                    <svg width="24" height="16" aria-controls="mobile-menu-container"
+                        aria-label="Переключатель мобильного меню">
+                        <use class="button-mobile__icon-cross"
+                            href="./images/icon-navigation.svg#icon-icon-navigation-close"></use>
+                    </svg>
+                </button>
+
                 <div class="mobile-navigation-top">
                     <ul class="mobile-navigation">
                         <li class="mobile-navigation__item"><a href="./index.html"
