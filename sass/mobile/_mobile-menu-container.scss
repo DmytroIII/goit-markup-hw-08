@@ -24,7 +24,7 @@
     flex-direction: column;
     overflow: auto;
     padding: 48px 21px 48px 40px;
-
+    height: 100%;
 }
 
 .mobile-navigation-top {
@@ -49,7 +49,7 @@
         text-decoration: none;
         font-weight: 500;
         font-size: 40px;
-        line-height: 1.17px;
+        line-height: 1.17;
         color: #212121;
 
         &:hover,
@@ -71,15 +71,16 @@
     &__phone {
         font-weight: 500;
         font-size: 34px;
-        line-height: 40px;
+        line-height: 1.18;
         color: #2196F3;
         text-decoration: none;
+        letter-spacing: 0.02em;
     }
 
     &__mail {
         font-weight: 500;
         font-size: 24px;
-        line-height: 28px;
+        line-height: 1.17;
         color: #757575;
         text-decoration: none;
     }
@@ -101,8 +102,8 @@
     border: 0;
     background-color: transparent;
 
-    &:hover,
-    :active {
+    &__icon-menu:hover,
+    &icon-menu:active {
         fill: #2196F3;
     }
 
@@ -151,8 +152,9 @@
     }
 }
 
-
-.button-open {}
-
-
-.button-close {}
+.button-close {
+position: absolute;
+top:21px;
+right: 25px;
+ 
+}

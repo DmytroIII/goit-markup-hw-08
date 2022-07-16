@@ -1406,6 +1406,7 @@ p {
           flex-direction: column;
   overflow: auto;
   padding: 48px 21px 48px 40px;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1427,7 +1428,7 @@ p {
   text-decoration: none;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.17px;
+  line-height: 1.17;
   color: #212121;
 }
 .mobile-navigation__link:hover, .mobile-navigation__link:active {
@@ -1443,14 +1444,15 @@ p {
 .mobile-contacts__phone {
   font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.18;
   color: #2196F3;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 .mobile-contacts__mail {
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   color: #757575;
   text-decoration: none;
 }
@@ -1468,8 +1470,7 @@ p {
   border: 0;
   background-color: transparent;
 }
-.button-mobile:hover,
-.button-mobile :active {
+.button-mobile__icon-menu:hover, .button-mobileicon-menu:active {
   fill: #2196F3;
 }
 .button-mobile.is-open .button-mobile__icon-cross {
@@ -1509,4 +1510,10 @@ p {
   color: #2196F3;
   letter-spacing: 0.02em;
   line-height: 1.2;
+}
+
+.button-close {
+  position: absolute;
+  top: 21px;
+  right: 25px;
 }/*# sourceMappingURL=main.css.map */
