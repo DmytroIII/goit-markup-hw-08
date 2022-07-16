@@ -1494,7 +1494,10 @@ p {
   border: 0;
   background-color: transparent;
 }
-.button-mobile:hover, .button-mobile:active {
+.button-mobile:hover .button-mobile__icon-menu, .button-mobile:active .button-mobile__icon-menu {
+  fill: #2196F3;
+}
+.button-mobile:hover .button-mobile__icon-cross, .button-mobile:active .button-mobile__icon-cross {
   fill: #2196F3;
 }
 .button-mobile.is-open .button-mobile__icon-cross {

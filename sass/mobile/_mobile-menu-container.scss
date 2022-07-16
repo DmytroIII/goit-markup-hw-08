@@ -102,9 +102,14 @@
     border: 0;
     background-color: transparent;
 
-    &:hover,
-    &:active {
+    &:hover &__icon-menu,
+    &:active &__icon-menu{
         fill: #2196F3;
+    }
+
+    &:hover &__icon-cross,
+    &:active &__icon-cross {
+         fill: #2196F3;
     }
 
 
